@@ -1,0 +1,15 @@
+{
+  "name": "lits-ui-kit",
+  "version": "1.0.0",
+  "description": "Test task for LITS link.",
+  "scripts": {
+    "start": "http-server -a 127.0.0.1 -p 8880 ./src",
+    "watch": "node-sass -w --source-map src/css/style.css.map --output-style compressed src/sass/main.scss -o src/css/"
+  },
+  "repository": "https://github.com/mharyst/lits-ui-kit",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "node-sass": "^3.8.0"
+  }
+}

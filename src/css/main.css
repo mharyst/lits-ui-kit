@@ -1,0 +1,3 @@
+body{font-family:"Source Sans Pro",sans-serif}header{height:90px;background-color:#fafafa;box-shadow:0 1px 0 rgba(0,0,0,0.1)}header .header-stripe{height:6px;background-color:red}header .header-wrapper{margin:0 auto}header .header-wrapper .header-list{font:400 23px "Source Sans Pro",sans-serif;color:#777;float:left}header .header-wrapper .header-list li{float:left;padding:0 1em;line-height:84px}header .header-wrapper .nav-right{float:right}header .header-wrapper .nav-right .search{height:40px}header .header-wrapper .nav-right .search input{width:315px;height:100%}
+
+/*# sourceMappingURL=style.css.map */

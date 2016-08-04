@@ -1,0 +1,49 @@
+//Colors
+$background-color: #fafafa;
+$font-color: #777;
+$font: "Source Sans Pro", sans-serif;
+
+body {
+  font-family: $font;
+}
+
+header {
+  height: 90px;
+  background-color: $background-color;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+  .header-stripe {
+    height: 6px;
+    background-color: red;
+  }
+
+  .header-wrapper {
+    // width: 90%;
+    // max-width: 1200px;
+    margin: 0 auto;
+
+    .header-list {
+      font: 400 23px $font;
+      color: $font-color;
+      float: left;
+
+      li {
+        float: left;
+        padding: 0 1em;
+        line-height: 84px;
+      }
+    }
+
+    .nav-right {
+      float: right;
+
+      .search {
+        height: 40px;
+        input {
+          width: 315px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
