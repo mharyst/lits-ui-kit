@@ -21,11 +21,13 @@ section {
   padding: 50px 30px;
 }
 
-.switches, .checkboxes {
+.switches, .check-radios {
   float: left;
 }
+
 
 @import "font.scss";
 @import "_header.scss";
 @import "_switches.scss";
 @import "_checkboxes.scss";
+@import "_radio.scss";

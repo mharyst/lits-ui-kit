@@ -23,10 +23,10 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <div class="search">
+        <!-- <div class="search">
           <input type="search" placeholder="Search..." title="Search">
           <button type="submit" title="Search"><i class="icon-magnifier"></i></button>
-        </div>
+        </div> -->
         <div class="notifications">
           <div class="alert">
             <a href="#">
@@ -77,15 +77,23 @@
           </label>
         </div>
       </div>
-      <div class="checkboxes">
-        <input id="default" type="checkbox">
-  			<label class="checkbox default" for="default">Default</label>
-
-  			<input id="hover" type="checkbox" >
-  			<label class="checkbox hover" for="hover" hover>Hover</label>
-
-  			<input id="selected" type="checkbox" checked>
-  			<label class="checkbox" for="selected">Selected</label>
+      <div class="check-radios">
+        <div class="checkboxes">
+          <input id="default" type="checkbox" />
+    			<label class="checkbox" for="default">Default</label>
+    			<input id="hover" type="checkbox" />
+    			<label class="checkbox hover" for="hover" hover>Hover</label>
+    			<input id="selected" type="checkbox" checked />
+    			<label class="checkbox" for="selected">Selected</label>
+        </div>
+        <div class="radios">
+          <input id="default-radio" name="radio" type="radio" />
+    			<label class="radio"  for="default-radio">Default</label>
+    			<input id="hover-radio" name="radio" type="radio" />
+    			<label class="radio hover" for="hover-radio">Hover</label>
+    			<input id="selected-radio" name="radio" type="radio" checked />
+    			<label class="radio" for="selected-radio">Selected</label>
+        </div>
       </div>
     </section>
   </main>

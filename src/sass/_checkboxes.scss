@@ -7,28 +7,37 @@
 		cursor: pointer;
 		font: 400 20px $font;
     color: $font-color;
-    margin-right: 10px;
+    margin-right: 40px;
     line-height: 18px;
 
     &:before {
   		content: "";
+      color: white;
   		display: inline-block;
   		width: 23px;
   		height: 23px;
-  		vertical-align: middle;
-  		background-color: $color-green;
-  		color: #f3f3f3;
+  		vertical-align: text-top;
+  		background-color: white;
   		text-align: center;
-      border: 2px solid $color-green;
+      border: 2px solid $font-color-input;
+      border-color: $font-color-input;
   		border-radius: 5px;
       margin-right: 10px;
+      font-family: 'ui-kit' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      font-size: 11px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 25px;
+      transition: all .2s ease-in;
   	}
-    &.default:before {
-      background-color: white;
-      border-color: $font-color-input;
-    }
     &.hover:before {
       background-color: white;
+      border-color: $color-green;
     }
 
     &:hover.checkbox:before {
@@ -42,13 +51,7 @@
 	}
 	input[type=checkbox]:checked + .checkbox:before {
 		content: "\e90e";
-    font-family: 'ui-kit' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: $color-green;
+    background-color: #ecfdc9;
+    border-color: $color-green;
 	}
