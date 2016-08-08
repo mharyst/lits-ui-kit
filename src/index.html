@@ -16,25 +16,27 @@
     <div class="header-stripe"></div>
     <div class="header-wrapper">
       <ul class="header-list">
-        <li>Home</li>
-        <li>Porfolio</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Porfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <div class="nav-right">
         <div class="search">
           <input type="search" placeholder="Search..." title="Search">
-          <button type="submit" title="Search"></button>
+          <button type="submit" title="Search"><i class="icon-magnifier"></i></button>
         </div>
         <div class="notifications">
           <div class="alert">
             <a href="#">
+              <i class="icon-bell"></i>
               <div class="badge"><span>4</span></div>
             </a>
           </div>
           <div class="message">
             <a href="#">
+              <i class="icon-bubble"></i>
               <div class="badge"><span>14</span></div>
             </a>
           </div>
@@ -47,5 +49,45 @@
       </div>
     </div>
   </header>
+  <main>
+    <section class="row">
+      <div class="switches">
+        <div class="rounded-switch">
+          <label class="switch">
+          	<input class="switch-input" type="checkbox" />
+          	<span class="switch-label" data-on="On" data-off="Off"></span>
+          	<span class="switch-handle"></span>
+          </label>
+          <label class="switch">
+          	<input class="switch-input" type="checkbox" checked />
+          	<span class="switch-label" data-on="On" data-off="Off"></span>
+          	<span class="switch-handle"></span>
+          </label>
+        </div>
+        <div class="square-switch">
+          <label class="switch">
+          	<input class="switch-input" type="checkbox" />
+          	<span class="switch-label" data-off="Off"></span>
+          	<span class="switch-handle"></span>
+          </label>
+          <label class="switch">
+          	<input class="switch-input" type="checkbox" checked />
+          	<span class="switch-label" data-off="Off"></span>
+          	<span class="switch-handle"></span>
+          </label>
+        </div>
+      </div>
+      <div class="checkboxes">
+        <input id="default" type="checkbox">
+  			<label class="checkbox default" for="default">Default</label>
+
+  			<input id="hover" type="checkbox" >
+  			<label class="checkbox hover" for="hover" hover>Hover</label>
+
+  			<input id="selected" type="checkbox" checked>
+  			<label class="checkbox" for="selected">Selected</label>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,104 @@
+@import "variables";
+
+@font-face {
+  font-family: 'ui-kit';
+  src:  url('#{$icomoon-font-path}/ui-kit.eot?ci4uh9');
+  src:  url('#{$icomoon-font-path}/ui-kit.eot?ci4uh9#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/ui-kit.ttf?ci4uh9') format('truetype'),
+    url('#{$icomoon-font-path}/ui-kit.woff?ci4uh9') format('woff'),
+    url('#{$icomoon-font-path}/ui-kit.svg?ci4uh9#ui-kit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ui-kit' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye;
+  }
+}
+.icon-friends {
+  &:before {
+    content: $icon-friends;
+  }
+}
+.icon-full-screen {
+  &:before {
+    content: $icon-full-screen;
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart;
+  }
+}
+.icon-left {
+  &:before {
+    content: $icon-left;
+  }
+}
+.icon-lock {
+  &:before {
+    content: $icon-lock;
+  }
+}
+.icon-magnifier {
+  &:before {
+    content: $icon-magnifier;
+  }
+}
+.icon-male-user {
+  &:before {
+    content: $icon-male-user;
+  }
+}
+.icon-play-button {
+  &:before {
+    content: $icon-play-button;
+  }
+}
+.icon-arrow {
+  &:before {
+    content: $icon-arrow;
+  }
+}
+.icon-speakera {
+  &:before {
+    content: $icon-speakera;
+  }
+}
+.icon-bell {
+  &:before {
+    content: $icon-bell;
+  }
+}
+.icon-bubble {
+  &:before {
+    content: $icon-bubble;
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+

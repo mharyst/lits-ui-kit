@@ -1,0 +1,118 @@
+.rounded-switch, .square-switch {
+  float: left;
+}
+
+.switches {
+  margin-right: 35px;
+}
+
+.switch {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 78px;
+	height: 40px;
+	padding: 3px;
+	margin: 0 28px 17px 0;
+	border-radius: 18px;
+	cursor: pointer;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+
+  &:checked ~ .switch-label {
+    background: $color-green;
+  }
+  &:checked ~ .switch-label:before {
+    opacity: 0;
+  }
+  &:checked ~ .switch-label:after {
+    opacity: 1;
+  }
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: $color-red;
+	border-radius: inherit;
+
+  &:before, &:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    color: #fff;
+  }
+
+  &:before {
+  	content: attr(data-off);
+  	right: 11px;
+  }
+  &:after {
+    content: attr(data-on);
+    left: 11px;
+    opacity: 0;
+  }
+}
+.square-switch .switch-label {
+  &:before {
+    content: "\e900";
+    font-family: 'ui-kit' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:after {
+    content: "\e90e";
+    font-family: 'ui-kit' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.switch-handle {
+	position: absolute;
+	top: 8.2px;
+	left: 7px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 100%;
+}
+
+.switch-input:checked ~ .switch-handle {
+	left: 47px;
+}
+
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+.square-switch {
+  .switch, .switch-handle {
+    border-radius: 5px;
+  }
+}
