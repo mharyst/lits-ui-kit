@@ -1,0 +1,60 @@
+.sign-in {
+  margin-right: 36px;
+  border: 1px solid $color-border;
+  border-radius: 5px;
+
+  .heading {
+    height: 48px;
+    background-color: #f6f5f6;
+    border-bottom: 1px solid #d6d6d6;
+    font: 700 20px $font;
+    color: $font-color;
+    text-transform: uppercase;
+    padding-right: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 48px;
+  }
+
+  .inputs {
+    margin-top: 35px;
+  }
+
+  p {
+    padding: 0 32px;
+    padding-right: 90px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  i {
+    position: absolute;
+    font-size: 21px;
+    line-height: 48px;
+    color: $color-input;
+    width: 57px;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 55px;
+    height: 42px;
+    font: 400 20px $font;
+    color: #333;
+    border: 1px solid $color-input;
+    border-radius: 5px;
+    &:active {
+      box-shadow: 0;
+      border-color: transparent;
+    }
+    &::-webkit-input-placeholder {
+      font: 400 20px $font;
+      color: $color-input;
+    }
+    &::-moz-placeholder {
+      font: 400 20px $font;
+      color: $color-input;
+    }
+  }
+}

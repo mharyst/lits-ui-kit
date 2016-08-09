@@ -1,0 +1,44 @@
+.pie {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 50%;
+    background-color: $background-color-secondary;
+    float: left;
+    margin: 1em;
+    margin-top: 0;
+}
+
+.value {
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    font: 200 33px $font;
+    text-align: center;
+    color: $font-color;
+    line-height: 120px;
+  }
+}
+
+.p60 {
+  background-image:
+       linear-gradient(140deg, transparent 50%, $color-green 50%),
+       linear-gradient(90deg, transparent 50%, $color-green 50%);
+}
+.p75 {
+  background-image:
+       linear-gradient(180deg, transparent 50%, $color-green 50%),
+       linear-gradient(90deg, transparent 50%, $color-green 50%);
+}

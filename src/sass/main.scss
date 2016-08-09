@@ -1,6 +1,7 @@
 //Colors
 $background-color: #fafafa;
 $background-color-hover: #f2f2f2;
+$background-color-secondary: #ededed;
 $font-color: #777;
 $font-color-hover: #999;
 $font-color-input: #dedede;
@@ -8,6 +9,8 @@ $color-red: #ff7f68;
 $color-orange: #ffa940;
 $color-green: #a9cf55;
 $color-blue: #4e90c7;
+$color-border: #c7c6cb;
+$color-input: #d5d5d5;
 
 //Font
 $font: "Source Sans Pro", sans-serif;
@@ -18,16 +21,28 @@ body {
 
 section {
   margin: 0 auto;
-  padding: 50px 30px;
+  padding: 0px 30px;
+  overflow: hidden;
+  clear: both;
+  &.top {
+    padding-top: 40px;
+  }
 }
 
-.switches, .check-radios {
+.switches, .check-radios, .pie-chart {
   float: left;
 }
 
+.col {
+  float: left;
+  width: 33.33333%;
+  margin: 25px 0;
+}
 
 @import "font.scss";
 @import "_header.scss";
 @import "_switches.scss";
 @import "_checkboxes.scss";
 @import "_radio.scss";
+@import "_piechart.scss";
+@import "_signinput.scss";

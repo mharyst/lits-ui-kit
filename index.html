@@ -7,7 +7,7 @@
   <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script><![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="src/img/favicon.ico">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700' rel='stylesheet' type='text/css'>
   <link href="src/css/reset.css" rel="stylesheet" type="text/css">
   <link href="src/css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -50,51 +50,79 @@
     </div>
   </header>
   <main>
-    <section class="row">
-      <div class="switches">
-        <div class="rounded-switch">
-          <label class="switch">
-          	<input class="switch-input" type="checkbox" />
-          	<span class="switch-label" data-on="On" data-off="Off"></span>
-          	<span class="switch-handle"></span>
-          </label>
-          <label class="switch">
-          	<input class="switch-input" type="checkbox" checked />
-          	<span class="switch-label" data-on="On" data-off="Off"></span>
-          	<span class="switch-handle"></span>
-          </label>
+    <section class="top">
+      <div class="container">
+        <div class="switches">
+          <div class="rounded-switch">
+            <label class="switch">
+            	<input class="switch-input" type="checkbox" />
+            	<span class="switch-label" data-on="On" data-off="Off"></span>
+            	<span class="switch-handle"></span>
+            </label>
+            <label class="switch">
+            	<input class="switch-input" type="checkbox" checked />
+            	<span class="switch-label" data-on="On" data-off="Off"></span>
+            	<span class="switch-handle"></span>
+            </label>
+          </div>
+          <div class="square-switch">
+            <label class="switch">
+            	<input class="switch-input" type="checkbox" />
+            	<span class="switch-label" data-off="Off"></span>
+            	<span class="switch-handle"></span>
+            </label>
+            <label class="switch">
+            	<input class="switch-input" type="checkbox" checked />
+            	<span class="switch-label" data-off="Off"></span>
+            	<span class="switch-handle"></span>
+            </label>
+          </div>
         </div>
-        <div class="square-switch">
-          <label class="switch">
-          	<input class="switch-input" type="checkbox" />
-          	<span class="switch-label" data-off="Off"></span>
-          	<span class="switch-handle"></span>
-          </label>
-          <label class="switch">
-          	<input class="switch-input" type="checkbox" checked />
-          	<span class="switch-label" data-off="Off"></span>
-          	<span class="switch-handle"></span>
-          </label>
+        <div class="check-radios">
+          <div class="checkboxes">
+            <input id="default" type="checkbox" />
+      			<label class="checkbox" for="default">Default</label>
+      			<input id="hover" type="checkbox" />
+      			<label class="checkbox hover" for="hover" hover>Hover</label>
+      			<input id="selected" type="checkbox" checked />
+      			<label class="checkbox" for="selected">Selected</label>
+          </div>
+          <div class="radios">
+            <input id="default-radio" name="radio" type="radio" />
+      			<label class="radio"  for="default-radio">Default</label>
+      			<input id="hover-radio" name="radio" type="radio" />
+      			<label class="radio hover" for="hover-radio">Hover</label>
+      			<input id="selected-radio" name="radio" type="radio" checked />
+      			<label class="radio" for="selected-radio">Selected</label>
+          </div>
+        </div>
+        <div class="pie-chart">
+          <div class="pie value p60">
+            <span>75%</span>
+          </div>
+          <div class="pie p75"></div>
         </div>
       </div>
-      <div class="check-radios">
-        <div class="checkboxes">
-          <input id="default" type="checkbox" />
-    			<label class="checkbox" for="default">Default</label>
-    			<input id="hover" type="checkbox" />
-    			<label class="checkbox hover" for="hover" hover>Hover</label>
-    			<input id="selected" type="checkbox" checked />
-    			<label class="checkbox" for="selected">Selected</label>
-        </div>
-        <div class="radios">
-          <input id="default-radio" name="radio" type="radio" />
-    			<label class="radio"  for="default-radio">Default</label>
-    			<input id="hover-radio" name="radio" type="radio" />
-    			<label class="radio hover" for="hover-radio">Hover</label>
-    			<input id="selected-radio" name="radio" type="radio" checked />
-    			<label class="radio" for="selected-radio">Selected</label>
+    </section>
+    <section class="bottom">
+      <div class="col">
+        <div class="sign-in">
+          <p class="heading">Sign in</p>
+          <div class="inputs">
+            <p>
+              <i class="icon-male-user"></i>
+              <input type="text" placeholder="Username" name="user">
+            </p>
+            <p>
+              <i class="icon-lock"></i>
+              <input type="password" placeholder="Password" name="password">
+            </p>
+          </div>
+          <button type="submit">log in</button>
         </div>
       </div>
+      <div class="col"></div>
+      <div class="col"></div>
     </section>
   </main>
 </body>
