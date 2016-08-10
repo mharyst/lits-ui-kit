@@ -2,18 +2,22 @@
   margin-right: 36px;
   border: 1px solid $color-border;
   border-radius: 5px;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 52px;
 
   .heading {
     height: 48px;
     background-color: #f6f5f6;
     border-bottom: 1px solid #d6d6d6;
-    font: 700 20px $font;
+    font: 700 21px $font;
     color: $font-color;
     text-transform: uppercase;
-    padding-right: 25px;
+    padding-right: 32px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    line-height: 48px;
+    line-height: 49px;
+    letter-spacing: 2px;
   }
 
   .inputs {
@@ -24,14 +28,15 @@
     padding: 0 32px;
     padding-right: 90px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   i {
     position: absolute;
+    top: 0;
     font-size: 21px;
     line-height: 48px;
-    color: $color-input;
+    color: #ccc;
     width: 57px;
     text-align: center;
   }
@@ -39,22 +44,57 @@
   input {
     width: 100%;
     padding-left: 55px;
-    height: 42px;
+    height: 45px;
     font: 400 20px $font;
     color: #333;
     border: 1px solid $color-input;
     border-radius: 5px;
-    &:active {
-      box-shadow: 0;
-      border-color: transparent;
+    &:focus {
+      border-color: $color-blue;
+      outline: none;
     }
     &::-webkit-input-placeholder {
       font: 400 20px $font;
-      color: $color-input;
+      color: #ccc;
     }
     &::-moz-placeholder {
       font: 400 20px $font;
-      color: $color-input;
+      color: #ccc;
     }
   }
+
+  .focused {
+    input {
+      border-color: $color-blue;
+      outline: none;
+    }
+    i {
+      color: $color-blue;
+    }
+  }
+
+  button {
+    float: right;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: $color-blue;
+    width: 142px;
+    height: 48px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font: 600 23px $font;
+    cursor: pointer;
+    margin-top: 5px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #337ebc;
+    }
+  }
+}
+
+input:focus + i {
+  color: $color-blue;
 }
