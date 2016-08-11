@@ -109,16 +109,26 @@
         <div class="sign-in">
           <p class="heading">Sign in</p>
           <div class="inputs">
-            <p>
+            <p class="focused">
+              <input type="text" placeholder="Username" name="user" value="John D|">
               <i class="icon-male-user"></i>
-              <input type="text" placeholder="Username" name="user">
             </p>
             <p>
-              <i class="icon-lock"></i>
               <input type="password" placeholder="Password" name="password">
+              <i class="icon-lock"></i>
             </p>
           </div>
           <button type="submit">log in</button>
+        </div>
+        <div class="dropdown">
+          <select>
+            <option disabled selected hidden>Select Something</option>
+        		<option>First Option</option>
+        		<option>Another Option</option>
+        		<option>OK, that`s enough</option>
+        	</select>
+          <div class="focus-fix"></div>
+          <i class="icon-arrow"></i>
         </div>
       </div>
       <div class="col"></div>
