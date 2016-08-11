@@ -4,7 +4,7 @@
   border-radius: 5px;
   overflow: hidden;
   clear: both;
-  margin-bottom: 52px;
+  margin-bottom: 60px;
 
   .heading {
     height: 48px;
@@ -13,7 +13,6 @@
     font: 700 21px $font;
     color: $font-color;
     text-transform: uppercase;
-    padding-right: 32px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     line-height: 49px;
@@ -26,7 +25,6 @@
 
   p {
     padding: 0 32px;
-    padding-right: 90px;
     position: relative;
     margin-bottom: 18px;
   }
@@ -44,6 +42,7 @@
   input {
     width: 100%;
     padding-left: 55px;
+    box-sizing: border-box;
     height: 45px;
     font: 400 20px $font;
     color: #333;

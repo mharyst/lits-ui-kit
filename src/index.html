@@ -121,19 +121,77 @@
           <button type="submit">log in</button>
         </div>
         <div class="dropdown">
-          <select>
-            <option disabled selected hidden>Select Something</option>
-        		<option>First Option</option>
-        		<option>Another Option</option>
-        		<option>OK, that`s enough</option>
-        	</select>
-          <div class="focus-fix"></div>
-          <i class="icon-arrow"></i>
+          <button class="dropbtn">Select Something <div class="icon-bckg"><i class="icon-arrow"></i></div></button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#">First Option</a>
+            <a href="#">Another Option</a>
+            <a href="#">OK, that’s enough</a>
+          </div>
+        </div>
+        <div class="dropdown active">
+          <button class="dropbtn">Select Something <div class="icon-bckg"><i class="icon-arrow"></i></div></button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#">First Option</a>
+            <a href="#" class="hovered">Another Option</a>
+            <a href="#">OK, that’s enough</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="calendar">
+          <p class="heading">October 2014</p>
+          <ul class="weekdays">
+            <li>Su</li>
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+          </ul>
+          <ul class="days">
+            <li class="empty">0</li>
+            <li class="empty">0</li>
+            <li class="empty">0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li class="active active-from">15</li>
+            <li class="active">16</li>
+            <li class="active">17</li>
+            <li class="active">18</li>
+            <li class="active">19</li>
+            <li class="active">20</li>
+            <li class="active">21</li>
+            <li class="active">22</li>
+            <li class="active">23</li>
+            <li class="active active-to">24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            <li class="empty">0</li>
+          </ul>
         </div>
       </div>
       <div class="col"></div>
-      <div class="col"></div>
     </section>
   </main>
+
+  <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
