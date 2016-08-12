@@ -187,9 +187,59 @@
             <li class="empty">0</li>
           </ul>
         </div>
+        <div class="badge">
+          <div class="top">
+            <div class="profile-picture">
+              <div class="picture"></div>
+            </div>
+            <div class="info">
+              <h2>Emma Stone</h2>
+              <p>The Amazing Spider-Man, Gangster Squad, The Croods</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="fav"><i class="icon-heart"></i><span>172</span></div>
+            <div class="friends"><i class="icon-friends"></i><span>34</span></div>
+            <div class="views"><i class="icon-eye"></i><span>210</span></div>
+          </div>
+        </div>
       </div>
-      <div class="col"></div>
-      <div class="col"></div>
+      <div class="col">
+        <div class="sliders">
+          <div class="slider-1">
+            <output id="rangevalue" class="rangevalue">30</output>
+            <input type="range" min="0" max="100" value="30" step="1" onmousemove="sliderChange(this.value)" />
+          </div>
+          <div class="slider-2">
+            <div class="slider-range">
+              <div class="ui-slider-range"></div>
+              <span class="ui-slider-handle-first"></span>
+              <span class="ui-slider-handle-second"></span>
+            </div>
+            <ul class="heading-values">
+              <li>0</li>
+              <li>25</li>
+              <li>50</li>
+              <li>75</li>
+              <li>100</li>
+            </ul>
+          </div>
+          <div class="slider-3">
+            <div class="value-from">0%</div>
+            <div class="slider-range">
+              <div class="ui-slider-range"></div>
+              <span class="ui-slider-handle"></span>
+            </div>
+            <div class="value-to">100%</div>
+          </div>
+        </div>
+        <div class="video">
+          <video poster="src/img/video.jpg" controls>
+            <source src="src/video/up-pixar-trailer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </section>
   </main>
 

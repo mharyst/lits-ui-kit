@@ -1,0 +1,65 @@
+.bottom .badge {
+  border: 1px solid $color-border;
+  border-radius: 5px;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 60px;
+  margin-right: 18px;
+  margin-left: 6px;
+  .top {
+    display: flex;
+    padding: 25px 20px;
+    .profile-picture {
+      cursor: pointer;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    .picture {
+      width: 92px;
+      height: 92px;
+      background: url("../img/emmastone.jpg") no-repeat;
+      background-position: 22%;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 0 0 2px $color-border;
+    }
+
+    .info {
+      padding-top: 3px;
+      padding-left: 24px;
+      h2 {
+        font-size: 27px;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 19px;
+        padding-top: 11px;
+        line-height: 1.2;
+        color: $font-color;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    & > div {
+      flex: 1;
+      text-align: center;
+      font: 400 21px $font;
+      color: #fff;
+      padding: 14px 0;
+      cursor: pointer;
+    }
+    i {
+      margin-right: 5px;
+    }
+    .fav {
+      background-color: $color-green;
+    }
+    .friends {
+      background-color: $color-red;
+    }
+    .views {
+      background-color: $color-blue;
+    }
+  }
+}
