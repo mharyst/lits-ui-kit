@@ -233,18 +233,18 @@
             <div class="value-to">100%</div>
           </div>
         </div>
-        <div class="video">
+        <div class="video" id="videoContainer">
           <video poster="src/img/video.jpg">
             <source src="src/video/up-pixar-trailer.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
           <div class="controls-block">
-            <ul id="video-controls" class="controls">
+            <ul id="videoControls" class="controls">
               <li><button id="playpause" type="button"><i class="icon-play-button"></i></button></li>
               <li class="progress">
                 <div class="progress-slider">
-                  <div class="progress-slider-range"></div>
-                  <span class="progress-slider-handle"></span>
+                  <div class="progress-slider-range" id="progress-bar"></div>
+                  <span class="progress-slider-handle" id="progress"></span>
                 </div>
               </li>
               <li><button id="fs" type="button"><i class="icon-full-screen"></i></button></li>
