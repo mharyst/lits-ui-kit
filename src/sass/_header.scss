@@ -1,27 +1,29 @@
 header {
-  height: 96px;
+  height: 5.625rem;
+  overflow: hidden;
   background-color: $background-color;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0.063em 0 rgba(0, 0, 0, .1); /* 1/16 */
 
   .header-stripe {
-    height: 7px;
+    height: .4375rem;
     background: repeating-linear-gradient(to right, $color-red 150px, $color-red 300px, $color-orange 300px, $color-orange 450px, $color-green 450px, $color-green 600px, $color-blue 600px, $color-blue 750px);
   }
 
   .header-wrapper {
-    max-width: $screen-width;
+    // max-width: $screen-width;
     margin: 0 auto;
+    font-size: 1rem;
 
     .header-list {
-      font: 400 24px $font;
+      font: 400 1.5em $font;
       color: $font-color;
       float: left;
-      margin-left: 4px;
+      margin-left: .25em;
 
       li {
         float: left;
-        padding: 0 28px;
-        line-height: 89px;
+        padding: 0 1.1666em;
+        line-height: 3.49em;
         cursor: pointer;
         background: $background-color;
         -webkit-transition: background-color .5s;
@@ -43,24 +45,24 @@ header {
     }
 
     i {
-      font-size: 35px;
+      font-size: 2.1875em;
       color: $font-color-input;
     }
 
     .search {
-      margin: 16px 25px 16px 0;
+      margin: 1em 1.5625em 1em 0;
       float: left;
-      height: 54px;
-      padding: 0 22px 0 15px;
+      height: 3.375em;
+      padding: 0 1.375em 0 0.938em; /* 22/16, 15/16 */
       background-color: white;
-      border: 1px solid #d5d5d5;
-      border-radius: 5px;
+      border: 0.063em solid #d5d5d5; /* 1/16 */
+      border-radius: 0.313em; /* 5/16 */
 
       input {
         border: 0;
-        width: 300px;
+        width: 13.636em; /* 300/22 */
         height: 100%;
-        font: 400 22px $font;
+        font: 400 1.375em $font; /* 22/16 */
         color: $font-color;
         &:focus {
           outline: none;
@@ -76,14 +78,18 @@ header {
         }
       }
       button {
-        width: 28px;
-        height: 30px;
+        width: 1.75em; /* 28/16 */
+        height: 1.875em; /* 30/16 */
         float: right;
         padding: 0;
-        margin-top: 9px;
+        margin-top: 0.563em; /* 9/16 */
         border: 0;
+        font-size: 1rem;
         background: none;
         cursor: pointer;
+        .icon-magnifier {
+          font-size: 2em;
+        }
         &:focus {
           outline: none;
         }
@@ -105,9 +111,9 @@ header {
 
         a {
           display: block;
-          width: 30px;
-          height: 35px;
-          padding: 26px 20px;
+          width: 1.875em; /* 30/16 */
+          height: 2.188em; /* 35/16 */
+          padding: 1.625em 1.25em; /* 26/16, 20/16 */
 
           &:hover i {
             color: $font-color-hover;
@@ -122,33 +128,34 @@ header {
 
         span{
           position: absolute;
-          top: -20px;
-          right: -20px;
+          top: -1.176em; /* -20/17 */
+          right: -1.176em; /* -20/17 */
           display: block;
-          width: 36px;
-          height: 36px;
-          font: 400 17px $font;
+          width: 2.118em; /* 36/17 */
+          height: 2.118em; /* 36/17 */
+          font: 400 1.063em $font; /* 17/16 */
           background-color: $color-red;
           text-align: center;
-          line-height: 36px;
+          line-height: 2.118em; /* 36/17 */
           border-radius: 50%;
           color: #fff;
-          border: 3px solid $background-color;
+          border: 0.176em solid $background-color; /* 3/17 */
         }
       }
     }
 
     .user {
-      width: 44px;
-      height: 44px;
+      width: 2.75em; /* 44/16 */
+      height: 2.75em; /* 44/16 */
       float: left;
-      margin: 0 20px;
+      margin: 0 1.25em; /* 20/16 */
       a {
         display: block;
-        height: 40px;
+        height: 2.5em; /* 40/16 */
       }
       img {
-        padding-top: 20px;
+        width: 100%;
+        padding-top: 1.25em; /* 20/16 */
         border-radius: 50%;
       }
     }

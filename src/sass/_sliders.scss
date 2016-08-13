@@ -1,20 +1,21 @@
 .sliders {
-  margin: 17px 5px 34px 34px;
+  margin: 1.063em 0.313em 2.125em 2.125em; /* 17/16, 5/16, 34/16, 34/16 */
   .slider-1 {
-    padding-top: 34px;
+    padding-top: 2.125em; /* 34/16 */
     position: relative;
-    padding-bottom: 10px;
-    overflow: hidden;
-    margin-bottom: 40px;
+    padding-bottom: 0.625em; /* 10/16 */
+    overflow: visible;
+    margin-bottom: 2.5em; /* 40/16 */
     input[type='range'] {
         -webkit-appearance: none;
         appearance: none;
         -moz-appearance: none;
-        border-radius: 3px;
+        border-radius: 0.188em; /* 3/16 */
         background-color: $background-color-secondary;
-        height: 8px;
+        height: 0.5em; /* 8/16 */
         vertical-align: middle;
         width: 100%;
+        font-size: 1rem;
         &:focus {
           outline: none;
         }
@@ -22,10 +23,11 @@
     input[type=range]::-webkit-slider-runnable-track {
         -webkit-appearance: none;
         appearance: none;
-        border-radius: 3px;
+        border-radius: 0.188em; /* 3/16 */
         background-color: $background-color-secondary;
-        height: 8px;
+        height: 0.5em; /* 8/16 */
         vertical-align: middle;
+        font-size: 1rem;
     }
     input[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -33,24 +35,25 @@
         border-radius: 50%;
         background-color: #fff;
         color: #fff;
-        border: 5px solid #fff;
-        height: 10px;
-        width: 10px;
+        border: 0.313em solid #fff; /* 5/16 */
+        height: 0.625em; /* 10/16 */
+        width: 0.625em; /* 10/16 */
         vertical-align: middle;
         box-sizing: border-box;
-        box-shadow: 0 0 0 6px $color-blue;
+        box-shadow: 0 0 0 0.375em $color-blue; /* 6/16 */
+        font-size: 1rem;
     }
     input[type='range']::-moz-range-track {
         -moz-appearance: none;
         appearance: none;
-        border-radius: 3px;
+        border-radius: 0.188em; /* 3/16 */
         background-color: $background-color-secondary;
-        height: 8px;
         vertical-align: middle;
-        height: 8px;
+        height: 0.5em; /* 8/16 */
         vertical-align: middle;
         margin:0;
         padding:0;
+        font-size: 1rem;
     }
     input[type='range']::-moz-range-thumb {
         -moz-appearance: none;
@@ -58,23 +61,25 @@
         border-radius: 50%;
         background-color: #fff;
         color: #fff;
-        border: 5px solid #fff;
-        height: 1px;
-        width: 1px;
+        border: 0.313em solid #fff; /* 5/16 */
+        height: 0.063em; /* 1/16 */
+        width: 0.063em; /* 1/16 */
         vertical-align: middle;
         box-sizing: border-box;
-        box-shadow: 0 0 0 6px $color-blue;
+        box-shadow: 0 0 0 0.375em $color-blue; /* 6/16 */
+        font-size: 1rem;
     }
     .rangevalue {
       position: absolute;
       top: 0;
       left: 30%;
-      margin-left: -15px;
-      padding: 5px 10px;
+      margin-left: -0.938em; /* -15/16 */
+      padding: 0.313em 0.625em; /* 5/16, 10/16 */
       background-color: $color-blue;
       color: #fff;
-      border-radius: 5px;
+      border-radius: 0.313em; /* 5/16 */
       z-index: -1;
+      font-size: 1em; /* 16/16 */
       &:after {
         position: absolute;
         content: "";
@@ -83,14 +88,14 @@
         content: $icon-arrow;
         top: 0;
         left: 33%;
-        font-size: 7px;
+        font-size: 0.438em; /* 7/16 */
         font-family: 'ui-kit' !important;
         speak: none;
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
         text-transform: none;
-        line-height: 55px;
+        line-height: 7.857em; /* 55/7 */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -98,20 +103,20 @@
   }
   .slider-2 {
     width: 100%;
-    margin: 0 2px 0 2px;
-    margin-bottom: 37px;
-    padding: 20px 0;
+    margin: 0 0.125em 0 0.125em; /* 2/16, 2/16 */
+    margin-bottom: 2.313em; /* 37/16 */
+    padding: 1.25em 0; /* 20/16 */
     overflow: hidden;
     .slider-range {
-      border-radius: 3px;
+      border-radius: 0.188em; /* 3/16 */
       background-color: $background-color-secondary;
-      height: 8px;
+      height: 0.5em; /* 8/16 */
       position: relative;
       z-index: 1;
     }
     .ui-slider-range {
       position: absolute;
-      border-radius: 3px;
+      border-radius: 0.188em; /* 3/16 */
       left: 10%;
       width: 65%;
       top: 0;
@@ -127,11 +132,11 @@
       left: 10%;
       background-color: #fff;
       color: #fff;
-      border: 5px solid #fff;
-      height: 10px;
-      width: 10px;
+      border: 0.313em solid #fff; /* 5/16 */
+      height: 0.625em; /* 10/16 */
+      width: 0.625em; /* 10/16 */
       box-sizing: border-box;
-      box-shadow: 0 0 0 6px $color-green;
+      box-shadow: 0 0 0 0.375em $color-green; /* 6/16 */
       z-index: 2;
     }
     .ui-slider-handle-second {
@@ -142,21 +147,21 @@
       left: 75%;
       background-color: #fff;
       color: #fff;
-      border: 5px solid #fff;
-      height: 10px;
-      width: 10px;
+      border: 0.313em solid #fff; /* 5/16 */
+      height: 0.625em; /* 10/16 */
+      width: 0.625em; /* 10/16 */
       box-sizing: border-box;
-      box-shadow: 0 0 0 6px $color-green;
+      box-shadow: 0 0 0 0.375em $color-green; /* 6/16 */
       z-index: 2;
     }
     ul.heading-values {
-      margin-top: 20px;
+      margin-top: 1.25em; /* 20/16 */
       position: relative;
       width: 100%;
       li {
         position: absolute;
         top: 0;
-        font: 600 18px $font;
+        font: 600 1.125em $font; /* 18/16 */
         color: $font-color;
       }
       li:nth-child(2) {
@@ -176,20 +181,20 @@
   .slider-3 {
     width: 100%;
     margin: 0;
-    padding: 20px 0;
+    padding: 1.25em 0; /* 20/16 */
     overflow: hidden;
     .slider-range {
       width: 75%;
-      margin-top: 7px;
+      margin-top: 0.438em; /* 7/16 */
       float: left;
-      border-radius: 3px;
+      border-radius: 0.188em; /* 3/16 */
       background-color: $background-color-secondary;
-      height: 8px;
+      height: 0.5em; /* 8/16 */
       position: relative;
       z-index: 1;
     }
     .ui-slider-range {
-      border-radius: 3px;
+      border-radius: 0.188em; /* 3/16 */
       position: absolute;
       left: 0;
       width: 86%;
@@ -206,16 +211,16 @@
       left: 86%;
       background-color: #fff;
       color: #fff;
-      border: 5px solid #fff;
-      height: 10px;
-      width: 10px;
+      border: 0.313em solid #fff; /* 5/16 */
+      height: 0.625em; /* 10/16 */
+      width: 0.625em; /* 10/16 */
       box-sizing: border-box;
-      box-shadow: 0 0 0 6px $color-orange;
+      box-shadow: 0 0 0 0.375em $color-orange; /* 6/16 */
       z-index: 2;
     }
     .value-from, .value-to {
       width: 10%;
-      font: 600 18px $font;
+      font: 600 1.125em $font; /* 18/16 */
       color: $font-color;
       float: left;
     }
