@@ -65,6 +65,7 @@
       display: inline-block;
       text-align: center;
       width: 12.31%;
+      background-color: #fff;
       box-sizing: border-box;
       color: $font-color;
       font: 400 18px $font;
@@ -74,12 +75,25 @@
       line-height: 38px;
       margin: 5.5px 2px;
       cursor: pointer;
+      transition: color .3s;
+      transition: background-color .3s;
+      &:hover {
+        color: #fff;
+        background-color: $color-red;
+        opacity: .6;
+      }
       &.active {
         background-color: $color-red;
         position: relative;
         border: 0;
         border-radius: 0;
         color: #fff;
+        transition: color .3s;
+        &:hover {
+          color: $font-color;
+          background-color: $color-red;
+          opacity: 1;
+        }
         &:after {
           content: "";
           width: 90%;
@@ -110,6 +124,10 @@
         border: 1px solid $color-red;
         border-radius: 50%;
         z-index: 999;
+        transition: color .3s;
+        &:hover {
+          color: $font-color;
+        }
         &:after {
           width: 0%;
           height: 0px;
@@ -133,6 +151,11 @@
       color: transparent;
       background-color: $background-color-hover;
       border-color: $background-color-hover;
+      &:hover {
+        color: transparent;
+        background-color: $background-color-hover;
+        opacity: 1;
+      }
     }
   }
 }

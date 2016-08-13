@@ -45,11 +45,11 @@ if (supportsVideo) {
   });
 
   video.addEventListener('timeupdate', function() {
-    video.style = 'background: #000;';
+    video.style = 'background: #000; height: 100%;';
     var currentTime = Math.floor((video.currentTime / video.duration) * 100);
     var currentLoad = Math.floor(((video.buffered.end(0) / video.duration) * 100) + 10);
     progress.style = 'left: ' + currentTime + '%;';
-    progressBar.style = 'width: ' + currentLoad + '%;';
+    progressBar.style = 'width: ' + currentLoad + '%; height: 100%;';
   });
 
   //Fullscreen
@@ -73,6 +73,8 @@ if (supportsVideo) {
       else if (videoContainer.webkitRequestFullScreen) videoContainer.webkitRequestFullScreen();
       else if (videoContainer.msRequestFullscreen) videoContainer.msRequestFullscreen();
       setFullscreenData(true);
+      video.style = 'height: 100%;';
+      videoControls.style = 'background-color: rgba(0,0,0,0.6);';
    }
 }
   var isFullScreen = function() {
