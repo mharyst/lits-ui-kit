@@ -1,3 +1,14 @@
+//Screen size
+
+function adaptive() {
+  var w = window.innerWidth;
+  var mainFontSize = Math.floor((w * 0.125) * 0.1);
+  var htmlTag = document.querySelector('html');
+  htmlTag.style = 'font-size: ' + mainFontSize + 'px;';
+}
+
+window.onresize = adaptive;
+
 //Open/Close dropdown
 document.querySelector('.dropbtn').addEventListener('click', function () {
   document.querySelector('.dropdown').classList.toggle('active');
