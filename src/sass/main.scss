@@ -12,12 +12,21 @@ $color-blue: #4e90c7;
 $color-border: #c7c6cb;
 $color-input: #d5d5d5;
 
+$screen-width: 1280px;
+
 //Font
 $font: "Source Sans Pro", sans-serif;
 
+html {
+  font-size: 14px;
+}
+
 body {
-  font-family: $font;
-  max-width: 1280px;
+  font: 100%/1 $font;
+}
+
+main {
+  max-width: $screen-width;
   margin: 0 auto;
 }
 
@@ -33,12 +42,19 @@ section {
 
 .switches, .check-radios, .pie-chart {
   float: left;
+  @media screen and (max-width: 1020px) {
+    width: 100%;
+    margin: 20px auto;
+  }
 }
 
 .col {
   float: left;
   width: 33.33333%;
   margin: 25px 0;
+  @media screen and (max-width: 1020px) {
+    width: 100%;
+  }
 }
 
 @import "font.scss";

@@ -9,8 +9,7 @@ header {
   }
 
   .header-wrapper {
-    width: 100%;
-    // max-width: 1200px;
+    max-width: $screen-width;
     margin: 0 auto;
 
     .header-list {
