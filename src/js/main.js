@@ -1,4 +1,6 @@
 //Screen size
+window.onload = adaptive;
+window.onresize = adaptive;
 
 function adaptive() {
   var w = window.innerWidth;
@@ -7,7 +9,6 @@ function adaptive() {
   htmlTag.style = 'font-size: ' + mainFontSize + 'px;';
 }
 
-window.onresize = adaptive;
 
 //Open/Close dropdown
 document.querySelector('.dropbtn').addEventListener('click', function () {
