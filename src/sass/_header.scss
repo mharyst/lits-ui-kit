@@ -1,10 +1,10 @@
 header {
-  height: 90px;
+  height: 96px;
   background-color: $background-color;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 
   .header-stripe {
-    height: 6px;
+    height: 7px;
     background: repeating-linear-gradient(to right, $color-red 150px, $color-red 300px, $color-orange 300px, $color-orange 450px, $color-green 450px, $color-green 600px, $color-blue 600px, $color-blue 750px);
   }
 
@@ -13,14 +13,15 @@ header {
     margin: 0 auto;
 
     .header-list {
-      font: 400 23px $font;
+      font: 400 24px $font;
       color: $font-color;
       float: left;
+      margin-left: 4px;
 
       li {
         float: left;
-        padding: 0 31px;
-        line-height: 84px;
+        padding: 0 28px;
+        line-height: 89px;
         cursor: pointer;
         background: $background-color;
         -webkit-transition: background-color .5s;
@@ -42,15 +43,15 @@ header {
     }
 
     i {
-      font-size: 33px;
+      font-size: 35px;
       color: $font-color-input;
     }
 
     .search {
-      margin: 17px 31px;
+      margin: 16px 25px 16px 0;
       float: left;
-      height: 50px;
-      padding: 0 10px 0 15px;
+      height: 54px;
+      padding: 0 22px 0 15px;
       background-color: white;
       border: 1px solid #d5d5d5;
       border-radius: 5px;
@@ -59,7 +60,7 @@ header {
         border: 0;
         width: 300px;
         height: 100%;
-        font: 400 23px $font;
+        font: 400 22px $font;
         color: $font-color;
         &:focus {
           outline: none;
@@ -75,11 +76,11 @@ header {
         }
       }
       button {
-        width: 30px;
+        width: 28px;
         height: 30px;
         float: right;
         padding: 0;
-        margin-top: 10px;
+        margin-top: 9px;
         border: 0;
         background: none;
         cursor: pointer;
@@ -104,9 +105,9 @@ header {
 
         a {
           display: block;
-          width: 35px;
+          width: 30px;
           height: 35px;
-          padding: 29px 20px;
+          padding: 26px 20px;
 
           &:hover i {
             color: $font-color-hover;

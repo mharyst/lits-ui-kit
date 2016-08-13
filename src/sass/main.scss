@@ -18,7 +18,7 @@ $screen-width: 1280px;
 $font: "Source Sans Pro", sans-serif;
 
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 body {
@@ -36,10 +36,13 @@ section {
   overflow: hidden;
   clear: both;
   &.top {
-    padding-top: 40px;
+    margin-bottom: 12px;
   }
 }
 
+.switches, .check-radios {
+  padding-top: 40px;
+}
 .switches, .check-radios, .pie-chart {
   float: left;
   @media screen and (max-width: 1020px) {
