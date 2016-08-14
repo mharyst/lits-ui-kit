@@ -1,6 +1,7 @@
 //Colors
 $background-color: #fafafa;
 $background-color-hover: #f2f2f2;
+$background-color-secondary: #ededed;
 $font-color: #777;
 $font-color-hover: #999;
 $font-color-input: #dedede;
@@ -8,26 +9,99 @@ $color-red: #ff7f68;
 $color-orange: #ffa940;
 $color-green: #a9cf55;
 $color-blue: #4e90c7;
+$color-border: #c7c6cb;
+$color-input: #d5d5d5;
+
+$screen-md: 1200px;
+$screen-sm: 900px;
+$screen-xs: 580px;
+$screen-xxs: 400px;
+
 
 //Font
 $font: "Source Sans Pro", sans-serif;
 
+html {
+  font-size: 16px;
+}
+
 body {
-  font-family: $font;
+  font: 100%/1 $font;
+}
+
+main {
+  // max-width: $screen-width;
+  margin: 0 auto;
 }
 
 section {
   margin: 0 auto;
-  padding: 50px 30px;
+  padding: 0em 1.875em; /* 0/16, 30/16 */
+  overflow: hidden;
+  clear: both;
+  &.top {
+    margin-bottom: 0.75em; /* 12/16 */
+  }
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  overflow: hidden;
 }
 
 .switches, .check-radios {
+  padding-top: 2.5em; /* 40/16 */
+}
+.switches, .check-radios, .pie-chart {
   float: left;
+  font-size: 1rem;
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+    margin: 1.25em auto; /* 20/16 */
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+  }
 }
 
+.check-radios {
+  @media screen and (max-width: $screen-sm) {
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $screen-xs) {
+    align-items: center;
+  }
+}
+
+.col {
+  float: left;
+  width: 33.33333%;
+  margin: 1.563em 0; /* 25/16 */
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+  }
+}
+
+.sign-in, .dropdown, .calendar, .badge {
+  @media screen and (max-width: $screen-sm) {
+    margin-right: 0 !important;
+  }
+}
 
 @import "font.scss";
 @import "_header.scss";
 @import "_switches.scss";
 @import "_checkboxes.scss";
 @import "_radio.scss";
+@import "_piechart.scss";
+@import "_signinput.scss";
+@import "_dropdown.scss";
+@import "_calendar.scss";
+@import "_badge.scss";
+@import "_sliders.scss";
+@import "_video.scss";

@@ -1,29 +1,38 @@
 .radios {
-  margin-top: 38px;
+  margin-top: 2.375em; /* 38/16 */
+  @media screen and (max-width: $screen-xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 .radio {
   display: inline-block;
   cursor: pointer;
-  font: 400 20px "Source Sans Pro",sans-serif;
+  font: 400 1.25em "Source Sans Pro",sans-serif; /* 20/16 */
   color: $font-color;
-  margin-right: 40px;
-  line-height: 18px;
+  margin-right: 2em; /* 40/20 */
+  line-height: 0.9em; /* 18/20 */
+  @media screen and (max-width: $screen-xs) {
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
   &:before {
     content: "";
     display: inline-block;
-    width: 23px;
-    height: 23px;
+    width: 0.319em; /* 23/72 */
+    height: 0.319em; /* 23/72 */
     vertical-align: text-top;
     background-color: white;
     color: white;
     text-align: center;
-    line-height: 10px;
-    font-size: 72px;
+    line-height: 0.139em; /* 10/72 */
+    font-size: 3.6em; /* 72/20 */
     border-radius: 50%;
-    border: 2px solid $font-color-input;
+    border: 0.028em solid $font-color-input; /* 2/72 */
     border-color: $font-color-input;
-    margin-right: 10px;
+    margin-right: 0.139em; /* 10/72 */
     transition: all .2s ease-in;
   }
   &.hover:before {

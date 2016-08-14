@@ -1,0 +1,102 @@
+.sign-in {
+  margin-right: 2.25em; /* 36/16 */
+  border: 1px solid $color-border;
+  border-radius: 5px;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 3.75em; /* 60/16 */
+
+  .heading {
+    height: 2.286em; /* 48/21 */
+    background-color: #f6f5f6;
+    border-bottom: 1px solid #d6d6d6;
+    font: 700 1.313em $font; /* 21/16 */
+    color: $font-color;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 2.333em; /* 49/21 */
+    letter-spacing: 0.095em; /* 2/21 */
+    padding: 0 1.524em; /* 32/21 */
+    margin-bottom: 0.857em; /* 18/21 */
+  }
+
+  .inputs {
+    margin-top: 2.188em; /* 35/16 */
+  }
+
+  p {
+    padding: 0 2em; /* 32/16 */
+    position: relative;
+    margin-bottom: 1.125em; /* 18/16 */
+  }
+
+  i {
+    position: absolute;
+    top: 0;
+    left: 1.524em; /* 32/21 */
+    font-size: 1.313em; /* 21/16 */
+    line-height: 2.286em; /* 48/21 */
+    color: #ccc;
+    width: 2.714em; /* 57/21 */
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 2.75em; /* 55/20 */
+    box-sizing: border-box;
+    height: 2.25em; /* 45/20 */
+    font: 400 1.25em $font; /* 20/16 */
+    color: #333;
+    border: 1px solid $color-input;
+    border-radius: 0.25em; /* 5/20 */
+    &:focus {
+      border-color: $color-blue;
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      font: 400 1.25em $font; /* 20/16 */
+      color: #ccc;
+    }
+    &::-moz-placeholder {
+      font: 400 1.25em $font; /* 20/16 */
+      color: #ccc;
+    }
+  }
+
+  .focused {
+    input {
+      border-color: $color-blue;
+      outline: none;
+    }
+    i {
+      color: $color-blue;
+    }
+  }
+
+  button {
+    float: right;
+    margin-right: 1.391em; /* 32/23 */
+    margin-bottom: 1.391em; /* 32/23 */
+    background-color: $color-blue;
+    width: 6.174em; /* 142/23 */
+    height: 2.087em; /* 48/23 */
+    border: 0;
+    border-radius: 0.217em; /* 5/23 */
+    color: white;
+    font: 600 1.438em $font; /* 23/16 */
+    cursor: pointer;
+    margin-top: 0.217em; /* 5/23 */
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #337ebc;
+    }
+  }
+}
+
+input:focus + i {
+  color: $color-blue;
+}

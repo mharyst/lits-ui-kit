@@ -1,0 +1,78 @@
+.pie-chart {
+  padding-top: 2.313em; /* 37/16 */
+  padding-left: 1em; /* 16/16 */
+  @media screen and (max-width: $screen-xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .pie {
+    width: 8em; /* 128/16 */
+    height: 8em; /* 128/16 */
+    display: block;
+    border-radius: 50%;
+    background-color: $background-color-secondary;
+    float: left;
+    margin: 0 3.5em 0.625em 0.625em; /* 56/16, 10/16, 10/16 */
+    opacity: 1;
+    transition: opacity .3s;
+    cursor: pointer;
+    @media screen and (max-width: $screen-xs) {
+      margin: 0;
+    }
+    &:first-child {
+      @media screen and (max-width: $screen-xs) {
+        margin-bottom: 2em;
+      }
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .value {
+    position: relative;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 6.75em; /* 108/16 */
+      height: 6.75em; /* 108/16 */
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 0.625em; /* 10/16 */
+      left: 0.625em; /* 10/16 */
+      transition: all .3s;
+    }
+    &:hover.value:before {
+      width: 7.375em; /* 118/16 */
+      height: 7.375em; /* 118/16 */
+      top: 0.313em; /* 5/16 */
+      left: 0.313em; /* 5/16 */
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      font: 200 2.688em $font; /* 43/16 */
+      text-align: center;
+      color: $font-color;
+      line-height: 2.907em; /* 125/43 */
+    }
+    &:hover span {
+      font-size: 2.875em; /* 46/16 */
+      transition: font-size .3s;
+    }
+  }
+
+  .p60 {
+    background-image:
+    linear-gradient(140deg, transparent 50%, $color-green 50%),
+    linear-gradient(90deg, transparent 50%, $color-green 50%);
+  }
+  .p75 {
+    background-image:
+    linear-gradient(180deg, transparent 50%, $color-green 50%),
+    linear-gradient(90deg, transparent 50%, $color-green 50%);
+  }
+}

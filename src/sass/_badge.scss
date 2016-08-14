@@ -1,0 +1,86 @@
+.bottom .badge {
+  border: 0.063em solid $color-border; /* 1/16 */
+  border-radius: 0.313em; /* 5/16 */
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 3.75em; /* 60/16 */
+  margin-right: 1.125em; /* 18/16 */
+  margin-left: 0.375em; /* 6/16 */
+  @media screen and (max-width: $screen-sm) {
+    margin-bottom: 0;
+  }
+  .top {
+    display: flex;
+    padding: 1.563em 1.25em; /* 25/16, 20/16 */
+    @media screen and (max-width: $screen-xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-picture {
+      cursor: pointer;
+      margin-left: 0.313em; /* 5/16 */
+      margin-top: 0.313em; /* 5/16 */
+    }
+    .picture {
+      width: 5.75em; /* 92/16 */
+      height: 5.75em; /* 92/16 */
+      background: url("../img/emmastone.jpg") no-repeat;
+      background-size: 12rem;
+      background-position: 22%;
+      border-radius: 50%;
+      border: 0.375em solid white; /* 6/16 */
+      box-shadow: 0 0 0 0.125em $color-border; /* 2/16 */
+      opacity: 1;
+      transition: opacity .3s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    .info {
+      padding-top: 0.188em; /* 3/16 */
+      padding-left: 1.5em; /* 24/16 */
+      h2 {
+        font-size: 1.688em; /* 27/16 */
+        letter-spacing: 0.037em; /* 1/27 */
+      }
+      p {
+        font-size: 1.188em; /* 19/16 */
+        padding-top: 0.579em; /* 11/19 */
+        line-height: 1.2;
+        color: $font-color;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    @media screen and (max-width: $screen-xs) {
+      flex-direction: column;
+    }
+    & > div {
+      flex: 1;
+      text-align: center;
+      font: 400 1.313em $font; /* 21/16 */
+      color: #fff;
+      padding: 0.667em 0; /* 14/21 */
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity .2s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    i {
+      margin-right: 0.238em; /* 5/21 */
+    }
+    .fav {
+      background-color: $color-green;
+    }
+    .friends {
+      background-color: $color-red;
+    }
+    .views {
+      background-color: $color-blue;
+    }
+  }
+}

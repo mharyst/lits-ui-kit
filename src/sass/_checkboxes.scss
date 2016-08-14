@@ -1,38 +1,47 @@
 .checkboxes {
-  margin-top: 11px;
+  margin-top: 0.688em; /* 11/16 */
+  @media screen and (max-width: $screen-xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 .checkbox {
 		display: inline-block;
 		cursor: pointer;
-		font: 400 20px $font;
+		font: 400 1.25em $font; /* 20/16 */
     color: $font-color;
-    margin-right: 40px;
-    line-height: 18px;
+    margin-right: 2em; /* 40/20 */
+    line-height: 0.9em; /* 18/20 */
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 1em;
+      margin-right: 0;
+    }
 
     &:before {
   		content: "";
       color: white;
   		display: inline-block;
-  		width: 23px;
-  		height: 23px;
+  		width: 2.091em; /* 23/11 */
+  		height: 2.091em; /* 23/11 */
   		vertical-align: text-top;
   		background-color: white;
   		text-align: center;
-      border: 2px solid $font-color-input;
+      border: 0.182em solid $font-color-input; /* 2/11 */
       border-color: $font-color-input;
-  		border-radius: 5px;
-      margin-right: 10px;
+  		border-radius: 0.455em; /* 5/11 */
+      margin-right: 0.909em; /* 10/11 */
       font-family: 'ui-kit' !important;
       speak: none;
       font-style: normal;
       font-weight: normal;
       font-variant: normal;
       text-transform: none;
-      font-size: 11px;
+      font-size: 0.55em; /* 11/20 */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      line-height: 25px;
+      line-height: 2.273em; /* 25/11 */
       transition: all .2s ease-in;
   	}
     &.hover:before {

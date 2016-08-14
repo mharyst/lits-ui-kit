@@ -1,0 +1,101 @@
+.video {
+  margin: 1.063em 0em 1.25em 1.813em; /* 17/16, 0/16, 20/16, 29/16 */
+  position: relative;
+  @media screen and (max-width: $screen-xs) {
+    margin: 0;
+  }
+  video {
+    width: 100%;
+    height: 16.375em; /* 262/16 */
+    transition: height .3s;
+    @media screen and (max-width: $screen-sm) {
+      height: 100%;
+    }
+  }
+  .controls-block {
+    width: 100%;
+    position: absolute;
+    bottom: 0.25em; /* 4/16 */
+    left: 0;
+    box-sizing: border-box;
+    padding: 0.625em 1.25em; /* 10/16, 20/16 */
+    @media screen and (max-width: $screen-sm) {
+      padding: 0.625em 4em;
+    }
+  }
+  .controls {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 0 0.625em; /* 10/16 */
+    box-sizing: border-box;
+    border-radius: 0.313em; /* 5/16 */
+    height: 3.188em; /* 51/16 */
+    li {
+      float: left;
+      height: 100%;
+      width: 10%;
+      text-align: center;
+      &.progress {
+        width: 70%;
+        padding: 0 0.625em; /* 10/16 */
+        box-sizing: border-box;
+      }
+    }
+  }
+  button {
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    i {
+      color: #fff;
+      font-size: 1rem; /* 16/16 */
+      transition: color .3s;
+      &:hover {
+        color: $font-color-input;
+      }
+      &.icon-play-button {
+        font-size: 1.375rem; /* 22/16 */
+      }
+    }
+  }
+  .progress-slider {
+    width: 100%;
+    margin-top: 1.344em; /* 21.5/16 */
+    background-color: $color-red;
+    background-color: rgba(0, 0, 0, .3);
+    float: left;
+    border-radius: 0.188em; /* 3/16 */
+    height: 0.5em; /* 8/16 */
+    position: relative;
+    z-index: 1;
+  }
+  .progress-slider-range {
+    border-radius: 0.188em; /* 3/16 */
+    position: absolute;
+    left: 0;
+    width: 40%;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: $color-red;
+  }
+  .progress-slider-handle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    left: 30%;
+    background-color: #fff;
+    color: #fff;
+    height: 0.75em; /* 12/16 */
+    width: 0.75em; /* 12/16 */
+    box-sizing: border-box;
+    z-index: 2;
+    top: -0.125em; /* -2/16 */
+  }
+}
