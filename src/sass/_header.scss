@@ -39,6 +39,9 @@ header {
           -webkit-transition: background-color 0s;
           transition: background-color 0s;
         }
+        @media screen and (max-width: $screen-sm) {
+          line-height: 2.6em;
+        }
 
         a {
           color: $font-color;
@@ -57,7 +60,12 @@ header {
     .nav-right {
       float: right;
       @media screen and (max-width: $screen-sm) {
-        display: none;
+        width: 100%;
+        padding: 0 1.3em;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
       }
     }
 
@@ -75,12 +83,22 @@ header {
       border: 0.063em solid #d5d5d5; /* 1/16 */
       border-radius: 0.313em; /* 5/16 */
 
+      @media screen and (max-width: $screen-sm) {
+        border: 0;
+        padding: 0;
+        margin: 1em;
+        background-color: transparent;
+      }
+
       input {
         border: 0;
         width: 13.636em; /* 300/22 */
         height: 100%;
         font: 400 1.375em $font; /* 22/16 */
         color: $font-color;
+        @media screen and (max-width: $screen-sm) {
+          display: none;
+        }
         &:focus {
           outline: none;
         }
@@ -104,6 +122,9 @@ header {
         font-size: 1rem;
         background: none;
         cursor: pointer;
+        @media screen and (max-width: $screen-sm) {
+          font-size: 1.1em;
+        }
         .icon-magnifier {
           font-size: 2em;
         }
