@@ -1,5 +1,9 @@
 .sliders {
   margin: 1.063em 0.313em 2.125em 2.125em; /* 17/16, 5/16, 34/16, 34/16 */
+  @media screen and (max-width: $screen-sm) {
+    margin: 0;
+    margin-bottom: 1em;
+  }
   .slider-1 {
     padding-top: 2.125em; /* 34/16 */
     position: relative;

@@ -5,6 +5,9 @@
     width: 100%;
     height: 16.375em; /* 262/16 */
     transition: height .3s;
+    @media screen and (max-width: $screen-sm) {
+      height: 100%;
+    }
   }
   .controls-block {
     width: 100%;
@@ -13,6 +16,9 @@
     left: 0;
     box-sizing: border-box;
     padding: 0.625em 1.25em; /* 10/16, 20/16 */
+    @media screen and (max-width: $screen-sm) {
+      padding: 0.625em 4em;
+    }
   }
   .controls {
     display: inline-block;

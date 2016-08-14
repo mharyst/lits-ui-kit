@@ -1,13 +1,13 @@
 //Screen size
-window.onload = adaptive;
-window.onresize = adaptive;
-
-function adaptive() {
-  var w = window.innerWidth;
-  var mainFontSize = Math.floor((w * 0.125) * 0.1);
-  var htmlTag = document.querySelector('html');
-  htmlTag.style = 'font-size: ' + mainFontSize + 'px;';
-}
+// window.onload = adaptive;
+// window.onresize = adaptive;
+//
+// function adaptive() {
+//   var w = window.innerWidth;
+//   var mainFontSize = Math.floor((w * 0.125) * 0.1);
+//   var htmlTag = document.querySelector('html');
+//   htmlTag.style = 'font-size: ' + mainFontSize + 'px;';
+// }
 
 
 //Open/Close dropdown

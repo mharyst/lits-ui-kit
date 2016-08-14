@@ -6,6 +6,9 @@
   margin-bottom: 3.75em; /* 60/16 */
   margin-right: 1.125em; /* 18/16 */
   margin-left: 0.375em; /* 6/16 */
+  @media screen and (max-width: $screen-sm) {
+    margin-bottom: 0;
+  }
   .top {
     display: flex;
     padding: 1.563em 1.25em; /* 25/16, 20/16 */
