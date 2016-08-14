@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
   }
   .pie {
     width: 8em; /* 128/16 */
@@ -17,6 +18,14 @@
     opacity: 1;
     transition: opacity .3s;
     cursor: pointer;
+    @media screen and (max-width: $screen-xs) {
+      margin: 0;
+    }
+    &:first-child {
+      @media screen and (max-width: $screen-xs) {
+        margin-bottom: 2em;
+      }
+    }
     &:hover {
       opacity: .8;
     }
