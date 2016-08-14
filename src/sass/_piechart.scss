@@ -1,6 +1,11 @@
 .pie-chart {
   padding-top: 2.313em; /* 37/16 */
   padding-left: 1em; /* 16/16 */
+  @media screen and (max-width: $screen-xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .pie {
     width: 8em; /* 128/16 */
     height: 8em; /* 128/16 */

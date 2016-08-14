@@ -1,6 +1,9 @@
 .video {
   margin: 1.063em 0em 1.25em 1.813em; /* 17/16, 0/16, 20/16, 29/16 */
   position: relative;
+  @media screen and (max-width: $screen-xs) {
+    margin: 0;
+  }
   video {
     width: 100%;
     height: 16.375em; /* 262/16 */

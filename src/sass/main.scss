@@ -13,6 +13,7 @@ $color-border: #c7c6cb;
 $color-input: #d5d5d5;
 
 $screen-sm: 1020px;
+$screen-xs: 600px;
 
 
 //Font
@@ -70,6 +71,9 @@ section {
     flex-direction: column;
     margin: 0 auto;
   }
+  @media screen and (max-width: $screen-xs) {
+    align-items: center;
+  }
 }
 
 .col {
@@ -83,7 +87,7 @@ section {
 
 .sign-in, .dropdown, .calendar, .badge {
   @media screen and (max-width: $screen-sm) {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 

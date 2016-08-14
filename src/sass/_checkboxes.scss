@@ -1,5 +1,10 @@
 .checkboxes {
   margin-top: 0.688em; /* 11/16 */
+  @media screen and (max-width: $screen-xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 .checkbox {
@@ -9,6 +14,10 @@
     color: $font-color;
     margin-right: 2em; /* 40/20 */
     line-height: 0.9em; /* 18/20 */
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 1em;
+      margin-right: 0;
+    }
 
     &:before {
   		content: "";
