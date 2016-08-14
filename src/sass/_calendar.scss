@@ -93,6 +93,9 @@
       cursor: pointer;
       transition: color .3s;
       transition: background-color .3s;
+      @media screen and (max-width: $screen-md) {
+        width: 2.3em;
+      }
       @media screen and (max-width: $screen-sm) {
         width: 3.380208em;
         line-height: 3.380208em;
