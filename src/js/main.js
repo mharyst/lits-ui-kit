@@ -9,11 +9,35 @@ function adaptive() {
   htmlTag.style = 'font-size: ' + mainFontSize + 'px;';
 }
 
-
-//Open/Close dropdown
-document.querySelector('.dropbtn').addEventListener('click', function () {
-  document.querySelector('.dropdown').classList.toggle('active');
+//Dropdown fuctionality
+var dropdowns = document.querySelectorAll('.dropdown');
+[].forEach.call(dropdowns, function (currentDropdown) {
+  //Search all dropdowns and waiting for click
+  currentDropdown.addEventListener('click', function () {
+    //Clicked Dropdown
+      currentDropdown.classList.toggle('active');
+      var dropdownLinks = currentDropdown.querySelectorAll('#dropdownContent a');
+      // Links of clicked dropdown
+      [].forEach.call(dropdownLinks, function (link) {
+        // Click on current`s dropdown link
+        link.addEventListener('click', function () {
+          //Check if any link is already choosen
+          var checkedLinks = currentDropdown.querySelectorAll('#dropdownContent a.checked');
+          [].forEach.call(checkedLinks, function (checkedLink)  {
+            checkedLink.classList.remove('checked');
+          });
+          if (currentDropdown.querySelector('#dropdownContent a.hovered')) {
+            //Remove default hover class
+            currentDropdown.querySelector('#dropdownContent a.hovered').classList.remove('hovered');
+          }
+          //Choose current link
+          link.classList.add('checked');
+          currentDropdown.querySelector('button').innerHTML = link.innerHTML + ' <div class="icon-bckg"><i class="icon-arrow"></i>';
+        });
+      });
+    });
 });
+
 
 //Slider 1 functionality
 function sliderChange(value) {
