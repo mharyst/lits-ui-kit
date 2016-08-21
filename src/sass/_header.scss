@@ -9,7 +9,7 @@ header {
 
   .header-stripe {
     height: .4375rem;
-    background: repeating-linear-gradient(to right, $color-red 150px, $color-red 300px, $color-orange 300px, $color-orange 450px, $color-green 450px, $color-green 600px, $color-blue 600px, $color-blue 750px);
+    background: repeating-linear-gradient(to right, $color-red 9.375em, $color-red 18.75em, $color-orange 18.75em, $color-orange 28.125em, $color-green 28.125em, $color-green 37.5em, $color-blue 37.5em, $color-blue 46.875em); /* 150/16, 300/16, 300/16, 450/16, 450/16, 600/16, 600/16, 750/16 */
   }
 
   .header-wrapper {
